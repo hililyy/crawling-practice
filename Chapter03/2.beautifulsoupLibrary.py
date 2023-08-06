@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-
 response = requests.get("https://www.naver.com/")
 
 # naver 에서 html을 줌

@@ -16,4 +16,8 @@ for code in codes:
     soup = BeautifulSoup(html, 'html.parser')
     price = soup.select_one("#_nowVal").text
     price = price.replace(',', '')
-    print(price)
+    name = soup.select('div.wrap_company>h2>a')
+    print(name[0].text)
+    # for a_tag in name:
+    #     # a 태그의 텍스트를 출력합니다.
+    #     print(a_tag.text)
